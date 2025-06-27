@@ -30,8 +30,8 @@ df = pd.DataFrame(data)
 # if "_id" in df.columns:
 #     df["_id"] = df["_id"].astype(str)
 
-# if "created_at" in df.columns:
-#     df["created_at"] = pd.to_datetime(df["created_at"]).dt.strftime('%Y-%m-%d %H:%M:%S')
+# if "date" in df.columns:
+#     df["date"] = pd.to_datetime(df["date"]).dt.strftime('%Y-%m-%d %H:%M:%S')
 
 # Open your Google Sheet (replace with your actual sheet name)
 sheet = client.open("Your Google Sheet Name").sheet1
